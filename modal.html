@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Modal Example</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* Style for the modal background image */
+    .modal-header {
+      background-image: url("https://img.freepik.com/premium-vector/modern-corporate-gradient-blue-yellow-abstract-background-wallpaper_807302-197.jpg");
+      background-size: cover;
+      color: white; /* Adjust text color for better visibility */
+    } /* Custom styles for the close button */
+    .btn-close {
+      background-image: url(https://icon-library.com/images/close-button-icon-png/close-button-icon-png-29.jpg);
+      background-size: contain; /* Ensure the icon fits within the button */
+      background-repeat: no-repeat; /* Prevent the background from repeating */
+      width: 15px; /* Set the desired width */
+      height: 15px; /* Set the desired height */
+      border: none; /* Remove default button border */
+      color: transparent; /* Hide default text color */
+    }
+   
+  </style>
+</head>
+<body>
+  
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch Modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="https://th.bing.com/th/id/R.b68b670730e689eee9a6fc0a13760493?rik=TBDnyk9pvvxOqw&riu=http%3a%2f%2fwww.triangle.com.bd%2fwp-content%2fuploads%2f2018%2f11%2ftriangle_customer_care-1200x1328.png&ehk=FDa4jRBeJl8FKZsvQvaZQnP69zmT%2f0V1%2fnOZhbmOLsI%3d&risl=&pid=ImgRaw&r=0" alt="CKYC Logo" style="width:50px; height: 50px; margin-right: 10px;">
+          <h5 class="modal-title" id="exampleModalLabel">IVR NEW CUSTOMER ONBOARDING</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:red;"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form with 3 Input Fields -->
+          <form>
+            <div class="mb-3">
+              <label for="input1" class="form-label fw-bold fs-6">PAN</label>
+              <input type="text" class="form-control" id="input1" placeholder="Enter PAN" maxlength="10">
+            </div>
+            <div class="mb-3">
+              <label for="input2" class="form-label fw-bold fs-6">Email ID</label>
+              <input type="email" class="form-control" id="input2" placeholder="Enter Email ID">
+            </div>
+            <div class="mb-3">
+              <label for="input3" class="form-label fw-bold fs-6">Mobile Number</label>
+              <input type="text" class="form-control" id="input3" placeholder="Enter Mobile Number" maxlength="10">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JavaScript and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybGqXn+n62YvyoSFWmYlUefrVoXgbLl4EaKNqN+X1R60n9M3E" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
